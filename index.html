@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<script type="module" src="wordBag.js"></script>
+<script type="module" src="rules.js"></script>
+<script type="module" src="main.js"></script>
+<script type="module" src="events.js"></script>
+
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<h1>Home</h1>
+<div>
+<div class = "container" id = "container"></div>
+<div> <form id = "theForm">
+    <label for="generatedWord">Generated Word:</label>
+    <input type="text" id = "generatedWord" readonly>
+
+    <label for="word">Enter a word:</label>
+     <input type="text" id = "word" placeholder = "Enter a word">
+    <button type="button" id = "submit">Submit</button>
+    <br>
+    <input type="text" id = "timer" readonly>
+    <br> 
+    <input type="text" id = "alertBox" readonly>
+     
+     <br>
+     <label for="word">score:</label>
+     <input type="text" id = "score" placeholder = "0">
+   </form>
+   <button type = "button" id = "reset">Reset</button>
+   <button type = "button" id = "nextPhase">next phase</button>
+   <button type = "button" id = "nextWord">next word</button>
+ </div>
+</div>
+<div class="cursor"></div>
+</body>
+</html>
