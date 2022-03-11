@@ -125,12 +125,10 @@ document.addEventListener("mouseover", function(){
     else{
         
         //alert("Wrong Word");
-        //make alert box appear
         document.getElementById("alertBox").value = "Wrong Word";
 
     
-
-        wait(100).then(() => {
+        wait(200).then(() => {
         document.getElementById("word").value = "";
         document.getElementById("container").textContent = "";
         c.render();
@@ -162,24 +160,7 @@ function wait(n){
 }
 
 
-//if mouse not held down 
 
-
-
-//event listener for mouseout of letterBubble get th
-// document.getElementById("container").addEventListener("mouseout", function(e){
-//     if(e.target.classList.contains("letterBubble")){
-//         document.getElementById("word").value = "";
-//     }
-// })
-
-
-
-// let drag = false;
-
-// document.addEventListener('mousedown', () => drag = false);
-// document.addEventListener('mousemove', () => drag = true);
-// document.addEventListener('mouseup', () => console.log(drag ? 'drag' : 'click'));
 
 
 //on domload generate a random word
@@ -198,6 +179,11 @@ document.addEventListener("mouseover", function(){
         document.getElementById("word").value = "";
     }})
 
+
+
+
+
+ 
 
 
 export {c};
